@@ -87,9 +87,9 @@
     <category term="分类2" scheme="http://example.com/categories/%E7%B1%BB1/%E5%88%86%E7%B1%BB2/"/>
     
     
-    <category term="goumao3" scheme="http://example.com/tags/goumao3/"/>
-    
     <category term="today" scheme="http://example.com/tags/today/"/>
+    
+    <category term="goumao3" scheme="http://example.com/tags/goumao3/"/>
     
   </entry>
   
