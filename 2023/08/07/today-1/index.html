@@ -555,44 +555,34 @@
 
         
             
-    <div id="giscus-container"></div>
-    <script data-swup-reload-script defer>
-        async function loadGiscus() {
-            const giscusConfig = {
-                'src': 'https://giscus.app/client.js',
-                'data-repo': 'artplayor/artplayor.github.io',
-                'data-repo-id': 'R_kgDOKMUfHw',
-                'data-category': 'Announcements',
-                'data-category-id': 'DIC_kwDOKMUfH84CY6od',
-                'data-mapping': 'title',
-                'data-strict': '0',
-                'data-reactions-enabled': '1',
-                'data-emit-metadata': '1',
-                'data-theme': 'preferred_color_scheme',
-                'data-lang': 'en',
-                'data-input-position': 'bottom',
-                'data-loading': 'not-lazy',
-                'crossorigin': 'anonymous',
-                'async': true
-            }
-            const giscusScript = document.createElement('script');
-            for (const key in giscusConfig) {
-                giscusScript.setAttribute(key, giscusConfig[key]);
-            }
-            document.getElementById('giscus-container').appendChild(giscusScript);
+ 
+    <div id="waline"></div>
+    <script type="module"  data-swup-reload-script>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://example.example.com',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
         }
+
         if ('true') {
-            let loadGiscusTimeout = setTimeout(() => {
-                loadGiscus();
-                clearTimeout(loadGiscusTimeout);
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
             }, 1000);
         } else {
-            document.addEventListener('DOMContentLoaded', loadGiscus);
+            window.addEventListener('DOMContentLoaded', loadWaline);
         }
+        
     </script>
 
 
-        
+
         
     
 </div>
