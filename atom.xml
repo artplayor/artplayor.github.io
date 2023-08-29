@@ -1,76 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>ArtPlayer</title>
+  <title></title>
   
-  <subtitle>艺术嬉戏家的个人网站</subtitle>
+  
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-07T11:22:17.487Z</updated>
+  <updated>2023-08-29T17:14:59.852Z</updated>
   <id>http://example.com/</id>
-  
-  <author>
-    <name>艺术嬉戏家</name>
-    
-  </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hello today1</title>
-    <link href="http://example.com/2023/08/07/fuckyou/"/>
-    <id>http://example.com/2023/08/07/fuckyou/</id>
-    <published>2023-08-07T09:48:00.000Z</published>
-    <updated>2023-08-07T11:22:17.487Z</updated>
+    <title>[Hive] 一、基本搭建配置与启动</title>
+    <link href="http://example.com/posts/95f3624c"/>
+    <id>http://example.com/posts/95f3624c</id>
+    <published>2023-08-29T16:51:00.000Z</published>
+    <updated>2023-08-29T17:14:59.852Z</updated>
     
-    <content type="html"><![CDATA[<p>hello today1</p><h1 id="hello-today1"><a href="#hello-today1" class="headerlink" title="hello today1"></a>hello today1</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hive-一、基本搭建配置与启动"><a href="#Hive-一、基本搭建配置与启动" class="headerlink" title="Hive 一、基本搭建配置与启动"></a>Hive 一、基本搭建配置与启动</h1><h2 id="一、安装Hadoop"><a href="#一、安装Hadoop" class="headerlink" title="一、安装Hadoop"></a>一、安装Hadoop</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;hello today1&lt;/p&gt;
-&lt;h1 id=&quot;hello-today1&quot;&gt;&lt;a href=&quot;#hello-today1&quot; class=&quot;headerlink&quot; title=&quot;hello today1&quot;&gt;&lt;/a&gt;hello today1&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Hive-一、基本搭建配置与启动&quot;&gt;&lt;a href=&quot;#Hive-一、基本搭建配置与启动&quot; class=&quot;headerlink&quot; title=&quot;Hive 一、基本搭建配置与启动&quot;&gt;&lt;/a&gt;Hive 一、基本搭建配置与启动&lt;/h1&gt;&lt;h2 id=&quot;一、安装Hadoo</summary>
       
     
     
     
-    <category term="分类8" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB8/"/>
+    <category term="MLDB" scheme="http://example.com/categories/MLDB/"/>
+    
+    <category term="BigData" scheme="http://example.com/categories/MLDB/BigData/"/>
+    
+    <category term="Hive" scheme="http://example.com/categories/MLDB/BigData/Hive/"/>
     
     
-    <category term="yes or raight" scheme="http://example.com/tags/yes-or-raight/"/>
+    <category term="BigData" scheme="http://example.com/tags/BigData/"/>
+    
+    <category term="MLDB" scheme="http://example.com/tags/MLDB/"/>
+    
+    <category term="Hive" scheme="http://example.com/tags/Hive/"/>
     
   </entry>
   
   <entry>
-    <title>today</title>
-    <link href="http://example.com/2023/08/07/today-1/"/>
-    <id>http://example.com/2023/08/07/today-1/</id>
-    <published>2023-08-07T09:46:00.000Z</published>
-    <updated>2023-08-07T09:47:44.821Z</updated>
+    <title>[Hadoop] 一、基本搭建配置与启动</title>
+    <link href="http://example.com/posts/2419f644"/>
+    <id>http://example.com/posts/2419f644</id>
+    <published>2023-08-29T16:37:00.000Z</published>
+    <updated>2023-08-29T17:37:42.852Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="aa"><a href="#aa" class="headerlink" title="aa"></a>aa</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hadoop一基本搭建配置与启动"><a href="#Hadoop一基本搭建配置与启动" class="headerlink" title="Hadoop一基本搭建配置与启动"></a>Hadoop一基本搭建配置与启动</h1><h2 id="一、免密登录"><a href="#一、免密登录" class="headerlink" title="一、免密登录"></a>一、免密登录</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;aa&quot;&gt;&lt;a href=&quot;#aa&quot; class=&quot;headerlink&quot; title=&quot;aa&quot;&gt;&lt;/a&gt;aa&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Hadoop一基本搭建配置与启动&quot;&gt;&lt;a href=&quot;#Hadoop一基本搭建配置与启动&quot; class=&quot;headerlink&quot; title=&quot;Hadoop一基本搭建配置与启动&quot;&gt;&lt;/a&gt;Hadoop一基本搭建配置与启动&lt;/h1&gt;&lt;h2 id=&quot;一、免密登录&quot;&gt;&lt;</summary>
       
     
     
     
-    <category term="分类2" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB2/"/>
+    <category term="MLDB" scheme="http://example.com/categories/MLDB/"/>
+    
+    <category term="BigData" scheme="http://example.com/categories/MLDB/BigData/"/>
+    
+    <category term="Hadoop" scheme="http://example.com/categories/MLDB/BigData/Hadoop/"/>
     
     
-    <category term="today" scheme="http://example.com/tags/today/"/>
+    <category term="Hadoop" scheme="http://example.com/tags/Hadoop/"/>
+    
+    <category term="BigData" scheme="http://example.com/tags/BigData/"/>
+    
+    <category term="MLDB" scheme="http://example.com/tags/MLDB/"/>
     
   </entry>
   
   <entry>
-    <title>ml超帅的</title>
-    <link href="http://example.com/2023/08/07/hello-world/"/>
-    <id>http://example.com/2023/08/07/hello-world/</id>
+    <title>《函数，极限，连续》</title>
+    <link href="http://example.com/posts/0"/>
+    <id>http://example.com/posts/0</id>
+    <published>2023-08-29T11:10:00.000Z</published>
+    <updated>2023-08-29T18:22:35.976Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一章《函数，极限，连续》"><a href="#第一章《函数，极限，连续》" class="headerlink" title="第一章《函数，极限，连续》"></a>第一章《函数，极限，连续》</h1><h2 id="1-1《函数》"><a href="#1-1《函数》" class="headerlink" title="1.1《函数》"></a>1.1《函数》</h2><h3 id="1-1-1《函数的定义》"><a href="#1-1-1《函数的定义》" class="headerlink" title="1.1.1《函数的定义》"></a>1.1.1《函数的定义》</h3><h3 id="1-1-2《函数的性质》"><a href="#1-1-2《函数的性质》" class="headerlink" title="1.1.2《函数的性质》"></a>1.1.2《函数的性质》</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;第一章《函数，极限，连续》&quot;&gt;&lt;a href=&quot;#第一章《函数，极限，连续》&quot; class=&quot;headerlink&quot; title=&quot;第一章《函数，极限，连续》&quot;&gt;&lt;/a&gt;第一章《函数，极限，连续》&lt;/h1&gt;&lt;h2 id=&quot;1-1《函数》&quot;&gt;&lt;a href=&quot;#1-</summary>
+      
+    
+    
+    
+    <category term="高等数学" scheme="http://example.com/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="函数" scheme="http://example.com/tags/%E5%87%BD%E6%95%B0/"/>
+    
+    <category term="连续" scheme="http://example.com/tags/%E8%BF%9E%E7%BB%AD/"/>
+    
+    <category term="极限" scheme="http://example.com/tags/%E6%9E%81%E9%99%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo基本使用</title>
+    <link href="http://example.com/posts/d4fee3ae"/>
+    <id>http://example.com/posts/d4fee3ae</id>
     <published>2023-08-07T08:58:00.000Z</published>
-    <updated>2023-08-20T07:35:20.382Z</updated>
+    <updated>2023-08-29T17:34:43.891Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div><p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>]]></content>
     
@@ -82,14 +120,14 @@
     
     
     
-    <category term="类1" scheme="http://example.com/categories/%E7%B1%BB1/"/>
+    <category term="TECH" scheme="http://example.com/categories/TECH/"/>
     
-    <category term="分类2" scheme="http://example.com/categories/%E7%B1%BB1/%E5%88%86%E7%B1%BB2/"/>
+    <category term="FE" scheme="http://example.com/categories/TECH/FE/"/>
     
     
-    <category term="goumao3" scheme="http://example.com/tags/goumao3/"/>
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
     
-    <category term="today" scheme="http://example.com/tags/today/"/>
+    <category term="网站" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   

@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hello today1</title>
-    <url>/2023/08/07/fuckyou/</url>
-    <content><![CDATA[<p>hello today1</p>
-<h1 id="hello-today1"><a href="#hello-today1" class="headerlink" title="hello today1"></a>hello today1</h1>]]></content>
-      <categories>
-        <category>分类8</category>
-      </categories>
-      <tags>
-        <tag>yes or raight</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ml超帅的</title>
-    <url>/2023/08/07/hello-world/</url>
+    <title>hexo基本使用</title>
+    <url>/posts/d4fee3ae.html</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 <p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
@@ -26,23 +14,55 @@
 <p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
       <categories>
-        <category>类1</category>
-        <category>分类2</category>
+        <category>TECH</category>
+        <category>FE</category>
       </categories>
       <tags>
-        <tag>goumao3</tag>
-        <tag>today</tag>
+        <tag>hexo</tag>
+        <tag>网站</tag>
       </tags>
   </entry>
   <entry>
-    <title>today</title>
-    <url>/2023/08/07/today-1/</url>
-    <content><![CDATA[<h1 id="aa"><a href="#aa" class="headerlink" title="aa"></a>aa</h1>]]></content>
+    <title>《函数，极限，连续》</title>
+    <url>/posts/0.html</url>
+    <content><![CDATA[<h1 id="第一章《函数，极限，连续》"><a href="#第一章《函数，极限，连续》" class="headerlink" title="第一章《函数，极限，连续》"></a>第一章《函数，极限，连续》</h1><h2 id="1-1《函数》"><a href="#1-1《函数》" class="headerlink" title="1.1《函数》"></a>1.1《函数》</h2><h3 id="1-1-1《函数的定义》"><a href="#1-1-1《函数的定义》" class="headerlink" title="1.1.1《函数的定义》"></a>1.1.1《函数的定义》</h3><h3 id="1-1-2《函数的性质》"><a href="#1-1-2《函数的性质》" class="headerlink" title="1.1.2《函数的性质》"></a>1.1.2《函数的性质》</h3>]]></content>
       <categories>
-        <category>分类2</category>
+        <category>高等数学</category>
       </categories>
       <tags>
-        <tag>today</tag>
+        <tag>函数</tag>
+        <tag>连续</tag>
+        <tag>极限</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Hadoop] 一、基本搭建配置与启动</title>
+    <url>/posts/2419f644.html</url>
+    <content><![CDATA[<h1 id="Hadoop一基本搭建配置与启动"><a href="#Hadoop一基本搭建配置与启动" class="headerlink" title="Hadoop一基本搭建配置与启动"></a>Hadoop一基本搭建配置与启动</h1><h2 id="一、免密登录"><a href="#一、免密登录" class="headerlink" title="一、免密登录"></a>一、免密登录</h2>]]></content>
+      <categories>
+        <category>MLDB</category>
+        <category>BigData</category>
+        <category>Hadoop</category>
+      </categories>
+      <tags>
+        <tag>Hadoop</tag>
+        <tag>BigData</tag>
+        <tag>MLDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Hive] 一、基本搭建配置与启动</title>
+    <url>/posts/95f3624c.html</url>
+    <content><![CDATA[<h1 id="Hive-一、基本搭建配置与启动"><a href="#Hive-一、基本搭建配置与启动" class="headerlink" title="Hive 一、基本搭建配置与启动"></a>Hive 一、基本搭建配置与启动</h1><h2 id="一、安装Hadoop"><a href="#一、安装Hadoop" class="headerlink" title="一、安装Hadoop"></a>一、安装Hadoop</h2>]]></content>
+      <categories>
+        <category>MLDB</category>
+        <category>BigData</category>
+        <category>Hive</category>
+      </categories>
+      <tags>
+        <tag>BigData</tag>
+        <tag>MLDB</tag>
+        <tag>Hive</tag>
       </tags>
   </entry>
 </search>
