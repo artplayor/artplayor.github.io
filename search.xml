@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>《函数，极限，连续》</title>
-    <url>/posts/0.html</url>
-    <content><![CDATA[<h1 id="第一章《函数，极限，连续》"><a href="#第一章《函数，极限，连续》" class="headerlink" title="第一章《函数，极限，连续》"></a>第一章《函数，极限，连续》</h1><h2 id="1-1《函数》"><a href="#1-1《函数》" class="headerlink" title="1.1《函数》"></a>1.1《函数》</h2><h3 id="1-1-1《函数的定义》"><a href="#1-1-1《函数的定义》" class="headerlink" title="1.1.1《函数的定义》"></a>1.1.1《函数的定义》</h3><h3 id="1-1-2《函数的性质》"><a href="#1-1-2《函数的性质》" class="headerlink" title="1.1.2《函数的性质》"></a>1.1.2《函数的性质》</h3>]]></content>
-      <categories>
-        <category>高等数学</category>
-      </categories>
-      <tags>
-        <tag>函数</tag>
-        <tag>连续</tag>
-        <tag>极限</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo基本使用</title>
     <url>/posts/d4fee3ae.html</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
@@ -33,6 +20,19 @@
       <tags>
         <tag>hexo</tag>
         <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《函数，极限，连续》</title>
+    <url>/posts/0.html</url>
+    <content><![CDATA[<h1 id="第一章《函数，极限，连续》"><a href="#第一章《函数，极限，连续》" class="headerlink" title="第一章《函数，极限，连续》"></a>第一章《函数，极限，连续》</h1><h2 id="1-1《函数》"><a href="#1-1《函数》" class="headerlink" title="1.1《函数》"></a>1.1《函数》</h2><h3 id="1-1-1《函数的定义》"><a href="#1-1-1《函数的定义》" class="headerlink" title="1.1.1《函数的定义》"></a>1.1.1《函数的定义》</h3><h3 id="1-1-2《函数的性质》"><a href="#1-1-2《函数的性质》" class="headerlink" title="1.1.2《函数的性质》"></a>1.1.2《函数的性质》</h3>]]></content>
+      <categories>
+        <category>高等数学</category>
+      </categories>
+      <tags>
+        <tag>函数</tag>
+        <tag>连续</tag>
+        <tag>极限</tag>
       </tags>
   </entry>
   <entry>
