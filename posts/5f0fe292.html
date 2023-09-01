@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="艺术嬉戏家">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/posts/5f0fe292.html"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="二维图饼图普通写法123c &#x3D; Pie()c.add(&quot;Niganm&quot;,[list(x) for x in zip(Faker.choose(),Faker.values())])c.render_notebook()链式写法12345678910111213141516c &#x3D; (    Pie()    .add(&quot;Niganm&quot;,[list(x) for">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pyecharts绘画">
+<meta property="og:url" content="http://example.com/posts/5f0fe292">
+<meta property="og:site_name">
+<meta property="og:description" content="二维图饼图普通写法123c &#x3D; Pie()c.add(&quot;Niganm&quot;,[list(x) for x in zip(Faker.choose(),Faker.values())])c.render_notebook()链式写法12345678910111213141516c &#x3D; (    Pie()    .add(&quot;Niganm&quot;,[list(x) for">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-01T07:42:00.000Z">
+<meta property="article:modified_time" content="2023-09-01T08:57:00.025Z">
+<meta property="article:tag" content="MLDB">
+<meta property="article:tag" content="Analysis">
+<meta property="article:tag" content="Pyecharts">
+<meta name="twitter:card" content="summary">
+    
+    
+        <!-- Google tag (gtag.js) -->
+        <script src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '');
+        </script>
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            Pyecharts绘画 -
+        
+        ArtPlayer
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+    <!--- Font Part-->
+    
+        <link href="" rel="stylesheet">
+    
+    
+    
+    
+        <link href="" rel="stylesheet">
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":["盛明辉","艺术嬉戏家","hai"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":6,"number":true,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"Recommendation","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":true,"id":null},"english":null,"enable":true},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"ArtPlayer","subtitle":{"text":["To Love me To Love BIGDATA","Nothing What Can We Doing!!"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":true,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.4.4","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house","i18n":{"cn":"主页","en":"Home"}},"Archives":{"i18n":{"cn":"归档","en":"Archives"},"path":"/archives","icon":"fa-regular fa-archive"},"categories":{"i18n":{"cn":"分类","en":"Categories"},"icon":"fa-solid fa-folder","path":"/categories/"},"tag":{"i18n":{"cn":"标签","en":"TAG"},"path":"/tags","icon":"fa-regular fa-tag"},"MLDB":{"i18n":{"cn":"机器学习与大数据","en":"ML&DB"},"icon":"fa-solid fa-robot","path":"/mldb"},"Algorithm":{"i18n":{"cn":"算法","en":"algorithm"},"icon":"fa-regular fa-microchip-ai","path":"/algo"},"math":{"i18n":{"cn":"数学","en":"Math"},"icon":"fa-solid fa-infinity","path":"/math"},"english":{"i18n":{"cn":"英语","en":"ENGLISH"},"icon":"fa-solid fa-flag-usa","path":"/english"}},"search":{"enable":true,"preload":true},"categories":{"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD HH:mm:ss","categories":{"enable":true,"limit":6},"tags":{"enable":true,"limit":6}},"footerStart":"2023/8/28 11:45:14"};
+    Global.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    Global.data_config = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="swup-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+            <a class="logo-title" href="http://example.com/">
+                
+                ArtPlayer
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        ARCHIVES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/categories/"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-folder"></i>
+                                        
+                                        CATEGORIES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/tags"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-tag"></i>
+                                        
+                                        TAG
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/mldb"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-robot"></i>
+                                        
+                                        MLDB
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/algo"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-microchip-ai"></i>
+                                        
+                                        ALGORITHM
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/math"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-infinity"></i>
+                                        
+                                        MATH
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/english"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-flag-usa"></i>
+                                        
+                                        ENGLISH
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer w-full absolute top-0 left-0 bg-background-color">
+        <ul class="drawer-navbar-list flex flex-col justify-start items-center">
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                ARCHIVES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/categories/"  >
+                             
+                                
+                                    <i class="fa-solid fa-folder"></i>
+                                
+                                CATEGORIES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/tags"  >
+                             
+                                
+                                    <i class="fa-regular fa-tag"></i>
+                                
+                                TAG
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/mldb"  >
+                             
+                                
+                                    <i class="fa-solid fa-robot"></i>
+                                
+                                MLDB
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/algo"  >
+                             
+                                
+                                    <i class="fa-regular fa-microchip-ai"></i>
+                                
+                                ALGORITHM
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/math"  >
+                             
+                                
+                                    <i class="fa-solid fa-infinity"></i>
+                                
+                                MATH
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
+                        href="/english"  >
+                             
+                                
+                                    <i class="fa-solid fa-flag-usa"></i>
+                                
+                                ENGLISH
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            
+                <h1 class="article-title-regular">Pyecharts绘画</h1>
+            
+            </div>
+            
+                    
+        
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/redefine-avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">艺术嬉戏家</span>
+                        
+                            <span class="author-label">Lv2</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-09-01 15:42</span>
+        <span class="mobile">2023-09-01 15:42</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-09-01 16:57</span>
+            <span class="mobile">2023-09-01 16:57</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/MLDB/">MLDB</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/MLDB/Analysis/">Analysis</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/MLDB/Analysis/Pyecharts/">Pyecharts</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/MLDB/">MLDB</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Analysis/">Analysis</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Pyecharts/">Pyecharts</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>545 Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body">
+            <h2 id="二维图"><a href="#二维图" class="headerlink" title="二维图"></a>二维图</h2><h3 id="饼图"><a href="#饼图" class="headerlink" title="饼图"></a>饼图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">c = Pie()</span><br><span class="line">c.add(<span class="string">&quot;Niganm&quot;</span>,[<span class="built_in">list</span>(x) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">zip</span>(Faker.choose(),Faker.values())])</span><br><span class="line">c.render_notebook()</span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">c = (</span><br><span class="line">    Pie()</span><br><span class="line">    .add(<span class="string">&quot;Niganm&quot;</span>,[<span class="built_in">list</span>(x) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">zip</span>(Faker.choose(),Faker.values())])</span><br><span class="line">    .set_global_opts(</span><br><span class="line">        title_opts=opts.TitleOpts(</span><br><span class="line">            title=<span class="string">&quot;二维图&quot;</span>,</span><br><span class="line">            subtitle=<span class="string">&quot;饼图&quot;</span></span><br><span class="line">        ),</span><br><span class="line">        legend_opts=opts.LegendOpts(</span><br><span class="line">            type_=<span class="string">&quot;scroll&quot;</span>,</span><br><span class="line">            pos_left=<span class="string">&quot;80%&quot;</span>,</span><br><span class="line">            orient=<span class="string">&quot;vertical&quot;</span></span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line">c.render_notebook()</span><br></pre></td></tr></table></figure></div></p>
+<h3 id="玫瑰图"><a href="#玫瑰图" class="headerlink" title="玫瑰图"></a>玫瑰图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="简单柱状图"><a href="#简单柱状图" class="headerlink" title="简单柱状图"></a>简单柱状图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="堆叠柱状图"><a href="#堆叠柱状图" class="headerlink" title="堆叠柱状图"></a>堆叠柱状图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="条形图"><a href="#条形图" class="headerlink" title="条形图"></a>条形图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="直方图"><a href="#直方图" class="headerlink" title="直方图"></a>直方图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="柱状图调用JSCode"><a href="#柱状图调用JSCode" class="headerlink" title="柱状图调用JSCode"></a>柱状图调用JSCode</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="象形柱状图"><a href="#象形柱状图" class="headerlink" title="象形柱状图"></a>象形柱状图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="雷达图"><a href="#雷达图" class="headerlink" title="雷达图"></a>雷达图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="折线图"><a href="#折线图" class="headerlink" title="折线图"></a>折线图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="面积图"><a href="#面积图" class="headerlink" title="面积图"></a>面积图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="散点图"><a href="#散点图" class="headerlink" title="散点图"></a>散点图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="涟漪散点图"><a href="#涟漪散点图" class="headerlink" title="涟漪散点图"></a>涟漪散点图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="热力图"><a href="#热力图" class="headerlink" title="热力图"></a>热力图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="日历图"><a href="#日历图" class="headerlink" title="日历图"></a>日历图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="箱型图"><a href="#箱型图" class="headerlink" title="箱型图"></a>箱型图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="词云图"><a href="#词云图" class="headerlink" title="词云图"></a>词云图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="漏斗图"><a href="#漏斗图" class="headerlink" title="漏斗图"></a>漏斗图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="极坐标图"><a href="#极坐标图" class="headerlink" title="极坐标图"></a>极坐标图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="水球图"><a href="#水球图" class="headerlink" title="水球图"></a>水球图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="桑葚图"><a href="#桑葚图" class="headerlink" title="桑葚图"></a>桑葚图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="旭日图"><a href="#旭日图" class="headerlink" title="旭日图"></a>旭日图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="仪盘图"><a href="#仪盘图" class="headerlink" title="仪盘图"></a>仪盘图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="树图"><a href="#树图" class="headerlink" title="树图"></a>树图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="矩形树图"><a href="#矩形树图" class="headerlink" title="矩形树图"></a>矩形树图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="关系图"><a href="#关系图" class="headerlink" title="关系图"></a>关系图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="K线图"><a href="#K线图" class="headerlink" title="K线图"></a>K线图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="地图"><a href="#地图" class="headerlink" title="地图"></a>地图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="地理坐标图"><a href="#地理坐标图" class="headerlink" title="地理坐标图"></a>地理坐标图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h2 id="三维图"><a href="#三维图" class="headerlink" title="三维图"></a>三维图</h2><h3 id="3D折线图"><a href="#3D折线图" class="headerlink" title="3D折线图"></a>3D折线图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="3D柱状图"><a href="#3D柱状图" class="headerlink" title="3D柱状图"></a>3D柱状图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="时间轮播图"><a href="#时间轮播图" class="headerlink" title="时间轮播图"></a>时间轮播图</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+<h3 id="多图布局"><a href="#多图布局" class="headerlink" title="多图布局"></a>多图布局</h3><p><strong>普通写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div><br><strong>链式写法</strong><br><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO</span></span><br></pre></td></tr></table></figure></div></p>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/MLDB/">#MLDB</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/Analysis/">#Analysis</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/Pyecharts/">#Pyecharts</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                        rel="prev"
+                        href="/posts/9ad28b9"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">Pandas核心</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                        rel="next"
+                        href="/posts/3ad48e02"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">Pyecharts基本使用</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">Pyecharts绘画</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BB%B4%E5%9B%BE"><span class="nav-number">1.</span> <span class="nav-text">二维图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A5%BC%E5%9B%BE"><span class="nav-number">1.1.</span> <span class="nav-text">饼图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%AB%E7%91%B0%E5%9B%BE"><span class="nav-number">1.2.</span> <span class="nav-text">玫瑰图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E6%9F%B1%E7%8A%B6%E5%9B%BE"><span class="nav-number">1.3.</span> <span class="nav-text">简单柱状图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A0%86%E5%8F%A0%E6%9F%B1%E7%8A%B6%E5%9B%BE"><span class="nav-number">1.4.</span> <span class="nav-text">堆叠柱状图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E5%BD%A2%E5%9B%BE"><span class="nav-number">1.5.</span> <span class="nav-text">条形图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B4%E6%96%B9%E5%9B%BE"><span class="nav-number">1.6.</span> <span class="nav-text">直方图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%B1%E7%8A%B6%E5%9B%BE%E8%B0%83%E7%94%A8JSCode"><span class="nav-number">1.7.</span> <span class="nav-text">柱状图调用JSCode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B1%A1%E5%BD%A2%E6%9F%B1%E7%8A%B6%E5%9B%BE"><span class="nav-number">1.8.</span> <span class="nav-text">象形柱状图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%B7%E8%BE%BE%E5%9B%BE"><span class="nav-number">1.9.</span> <span class="nav-text">雷达图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%98%E7%BA%BF%E5%9B%BE"><span class="nav-number">1.10.</span> <span class="nav-text">折线图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%A2%E7%A7%AF%E5%9B%BE"><span class="nav-number">1.11.</span> <span class="nav-text">面积图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%A3%E7%82%B9%E5%9B%BE"><span class="nav-number">1.12.</span> <span class="nav-text">散点图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B6%9F%E6%BC%AA%E6%95%A3%E7%82%B9%E5%9B%BE"><span class="nav-number">1.13.</span> <span class="nav-text">涟漪散点图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%83%AD%E5%8A%9B%E5%9B%BE"><span class="nav-number">1.14.</span> <span class="nav-text">热力图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E5%8E%86%E5%9B%BE"><span class="nav-number">1.15.</span> <span class="nav-text">日历图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%B1%E5%9E%8B%E5%9B%BE"><span class="nav-number">1.16.</span> <span class="nav-text">箱型图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%8D%E4%BA%91%E5%9B%BE"><span class="nav-number">1.17.</span> <span class="nav-text">词云图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BC%8F%E6%96%97%E5%9B%BE"><span class="nav-number">1.18.</span> <span class="nav-text">漏斗图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%81%E5%9D%90%E6%A0%87%E5%9B%BE"><span class="nav-number">1.19.</span> <span class="nav-text">极坐标图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B0%B4%E7%90%83%E5%9B%BE"><span class="nav-number">1.20.</span> <span class="nav-text">水球图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%91%E8%91%9A%E5%9B%BE"><span class="nav-number">1.21.</span> <span class="nav-text">桑葚图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%AD%E6%97%A5%E5%9B%BE"><span class="nav-number">1.22.</span> <span class="nav-text">旭日图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%AA%E7%9B%98%E5%9B%BE"><span class="nav-number">1.23.</span> <span class="nav-text">仪盘图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%91%E5%9B%BE"><span class="nav-number">1.24.</span> <span class="nav-text">树图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9F%A9%E5%BD%A2%E6%A0%91%E5%9B%BE"><span class="nav-number">1.25.</span> <span class="nav-text">矩形树图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E5%9B%BE"><span class="nav-number">1.26.</span> <span class="nav-text">关系图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#K%E7%BA%BF%E5%9B%BE"><span class="nav-number">1.27.</span> <span class="nav-text">K线图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%B0%E5%9B%BE"><span class="nav-number">1.28.</span> <span class="nav-text">地图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%B0%E7%90%86%E5%9D%90%E6%A0%87%E5%9B%BE"><span class="nav-number">1.29.</span> <span class="nav-text">地理坐标图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E7%BB%B4%E5%9B%BE"><span class="nav-number">2.</span> <span class="nav-text">三维图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3D%E6%8A%98%E7%BA%BF%E5%9B%BE"><span class="nav-number">2.1.</span> <span class="nav-text">3D折线图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3D%E6%9F%B1%E7%8A%B6%E5%9B%BE"><span class="nav-number">2.2.</span> <span class="nav-text">3D柱状图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E9%97%B4%E8%BD%AE%E6%92%AD%E5%9B%BE"><span class="nav-number">2.3.</span> <span class="nav-text">时间轮播图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E5%9B%BE%E5%B8%83%E5%B1%80"><span class="nav-number">2.4.</span> <span class="nav-text">多图布局</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-microchip-ai" style="--fa-animation-duration: 0.5s; color: #000000"></i>&nbsp;&nbsp;<a href="/">艺术嬉戏家</a>
+        </div>
+        
+            <script data-swup-reload-script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.4.4</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex justify-center items-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+        ],
+        containers: ["#swup"],
+    });
+
+    swup.hooks.on("page:view", () => {
+        Global.refresh();
+    });
+
+    // if (document.readyState === "complete") {
+    //
+    // } else {
+    //     document.addEventListener("DOMContentLoaded", () => init());
+    // }
+</script>
+
+
+
+
+
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/js/tools/localSearch.js"></script>
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/libs/anime.min.js"></script>
+
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+</body>
+</html>
