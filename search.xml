@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>《函数，极限，连续》</title>
-    <url>/posts/0.html</url>
-    <content><![CDATA[<h1 id="第一章《函数，极限，连续》"><a href="#第一章《函数，极限，连续》" class="headerlink" title="第一章《函数，极限，连续》"></a>第一章《函数，极限，连续》</h1><h2 id="1-1《函数》"><a href="#1-1《函数》" class="headerlink" title="1.1《函数》"></a>1.1《函数》</h2><h3 id="1-1-1《函数的定义》"><a href="#1-1-1《函数的定义》" class="headerlink" title="1.1.1《函数的定义》"></a>1.1.1《函数的定义》</h3><h3 id="1-1-2《函数的性质》"><a href="#1-1-2《函数的性质》" class="headerlink" title="1.1.2《函数的性质》"></a>1.1.2《函数的性质》</h3>]]></content>
-      <categories>
-        <category>高等数学</category>
-      </categories>
-      <tags>
-        <tag>函数</tag>
-        <tag>连续</tag>
-        <tag>极限</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo基本使用</title>
     <url>/posts/d4fee3ae.html</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
@@ -36,18 +23,86 @@
       </tags>
   </entry>
   <entry>
-    <title>[Hadoop] 一、基本搭建配置与启动</title>
-    <url>/posts/2419f644.html</url>
-    <content><![CDATA[<h1 id="Hadoop一基本搭建配置与启动"><a href="#Hadoop一基本搭建配置与启动" class="headerlink" title="Hadoop一基本搭建配置与启动"></a>Hadoop一基本搭建配置与启动</h1><h2 id="一、免密登录"><a href="#一、免密登录" class="headerlink" title="一、免密登录"></a>一、免密登录</h2>]]></content>
+    <title>《函数，极限，连续》</title>
+    <url>/posts/0.html</url>
+    <content><![CDATA[<h1 id="第一章《函数，极限，连续》"><a href="#第一章《函数，极限，连续》" class="headerlink" title="第一章《函数，极限，连续》"></a>第一章《函数，极限，连续》</h1><h2 id="1-1《函数》"><a href="#1-1《函数》" class="headerlink" title="1.1《函数》"></a>1.1《函数》</h2><h3 id="1-1-1《函数的定义》"><a href="#1-1-1《函数的定义》" class="headerlink" title="1.1.1《函数的定义》"></a>1.1.1《函数的定义》</h3><h3 id="1-1-2《函数的性质》"><a href="#1-1-2《函数的性质》" class="headerlink" title="1.1.2《函数的性质》"></a>1.1.2《函数的性质》</h3>]]></content>
       <categories>
-        <category>MLDB</category>
-        <category>BigData</category>
-        <category>Hadoop</category>
+        <category>Mathematics</category>
       </categories>
       <tags>
-        <tag>Hadoop</tag>
-        <tag>BigData</tag>
+        <tag>Func</tag>
+        <tag>Continuity</tag>
+        <tag>Limit</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pyecharts基本使用</title>
+    <url>/posts/3ad48e02.html</url>
+    <content><![CDATA[<h1 id="Pyecharts基本使用"><a href="#Pyecharts基本使用" class="headerlink" title="Pyecharts基本使用"></a>Pyecharts基本使用</h1><p>绘制第一个图<br><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">from pyecharts.charts import Bar</span><br><span class="line">bar = Bar()</span><br><span class="line">bar.add_xaxis(&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wen&quot;,&quot;Tus&quot;,&quot;Fri&quot;)</span><br><span class="line">bar.add_yaxis(30,10,50,14,31)</span><br><span class="line">bar.render()</span><br></pre></td></tr></table></figure></div><br>上述代码会生成一个文件名为<code>render.html</code>的html文件，可以直接打开<br>如果想直接<code>jupyter notebook</code>里面看到效果，可以把上述代码改为如下<br><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">from pyecharts.charts import Bar</span><br><span class="line">bar = Bar()</span><br><span class="line">bar.add_xaxis(&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wen&quot;,&quot;Tus&quot;,&quot;Fri&quot;)</span><br><span class="line">bar.add_yaxis(30,10,50,14,31)</span><br><span class="line">bar.render_notebook() # 只改了这一行</span><br></pre></td></tr></table></figure></div><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="../../../images/pyecharts-1.png"
+                      alt="Alt text"
+                ></p>
+]]></content>
+      <categories>
+        <category>MLDB</category>
+        <category>Analesis</category>
+        <category>Pyecharts</category>
+      </categories>
+      <tags>
         <tag>MLDB</tag>
+        <tag>Analysis</tag>
+        <tag>Pyecharts</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>刘-Unit-1</title>
+    <url>/posts/a3a089b4.html</url>
+    <content><![CDATA[<h1 id="Unit-1"><a href="#Unit-1" class="headerlink" title="Unit-1"></a>Unit-1</h1><table>
+  <tr>
+    <th>序号</th>
+    <th>单词</th>
+    <th>翻译</th>
+    <th>状态</th>
+    <th>时间</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>unit</td>
+    <td>[n]单元，[v]给他</td>
+    <td>初学</td>
+    <td>08/31/2023</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>apple</td>
+    <td>[n]苹果，[v]给他</td>
+    <td>复习</td>
+    <td>08/31/2023</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>recognition</td>
+    <td>[n]组织，[v]组织</td>
+    <td>巩固</td>
+    <td>08/31/2023</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>commit</td>
+    <td>[n]犯罪，[v]提交</td>
+    <td>掌握</td>
+    <td>08/31/2023</td>
+  </tr>
+</table>]]></content>
+      <categories>
+        <category>English</category>
+        <category>Words</category>
+      </categories>
+      <tags>
+        <tag>English</tag>
+        <tag>Words</tag>
       </tags>
   </entry>
   <entry>
@@ -60,9 +115,24 @@
         <category>Hive</category>
       </categories>
       <tags>
-        <tag>BigData</tag>
         <tag>MLDB</tag>
         <tag>Hive</tag>
+        <tag>BigData</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[Hadoop] 一、基本搭建配置与启动</title>
+    <url>/posts/2419f644.html</url>
+    <content><![CDATA[<h1 id="Hadoop一基本搭建配置与启动"><a href="#Hadoop一基本搭建配置与启动" class="headerlink" title="Hadoop一基本搭建配置与启动"></a>Hadoop一基本搭建配置与启动</h1><h2 id="一、免密登录"><a href="#一、免密登录" class="headerlink" title="一、免密登录"></a>一、免密登录</h2>]]></content>
+      <categories>
+        <category>MLDB</category>
+        <category>BigData</category>
+        <category>Hadoop</category>
+      </categories>
+      <tags>
+        <tag>MLDB</tag>
+        <tag>BigData</tag>
+        <tag>Hadoop</tag>
       </tags>
   </entry>
 </search>

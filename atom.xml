@@ -6,10 +6,74 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-29T17:14:59.852Z</updated>
+  <updated>2023-09-01T02:53:07.074Z</updated>
   <id>http://example.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pyecharts基本使用</title>
+    <link href="http://example.com/posts/3ad48e02"/>
+    <id>http://example.com/posts/3ad48e02</id>
+    <published>2023-09-01T02:22:00.000Z</published>
+    <updated>2023-09-01T02:53:07.074Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Pyecharts基本使用"><a href="#Pyecharts基本使用" class="headerlink" title="Pyecharts基本使用"></a>Pyecharts基本使用</h1><p>绘制第一个图<br><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from pyecharts.charts import Bar</span><br><span class="line">bar = Bar()</span><br><span class="line">bar.add_xaxis(&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wen&quot;,&quot;Tus&quot;,&quot;Fri&quot;)</span><br><span class="line">bar.add_yaxis(30,10,50,14,31)</span><br><span class="line">bar.render()</span><br></pre></td></tr></table></figure></div><br>上述代码会生成一个文件名为<code>render.html</code>的html文件，可以直接打开<br>如果想直接<code>jupyter notebook</code>里面看到效果，可以把上述代码改为如下<br><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from pyecharts.charts import Bar</span><br><span class="line">bar = Bar()</span><br><span class="line">bar.add_xaxis(&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wen&quot;,&quot;Tus&quot;,&quot;Fri&quot;)</span><br><span class="line">bar.add_yaxis(30,10,50,14,31)</span><br><span class="line">bar.render_notebook() # 只改了这一行</span><br></pre></td></tr></table></figure></div><br><img                       lazyload                     src="/images/loading.svg"                     data-src="../../../images/pyecharts-1.png"                      alt="Alt text"                ></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Pyecharts基本使用&quot;&gt;&lt;a href=&quot;#Pyecharts基本使用&quot; class=&quot;headerlink&quot; title=&quot;Pyecharts基本使用&quot;&gt;&lt;/a&gt;Pyecharts基本使用&lt;/h1&gt;&lt;p&gt;绘制第一个图&lt;br&gt;&lt;div class=&quot;high</summary>
+      
+    
+    
+    
+    <category term="MLDB" scheme="http://example.com/categories/MLDB/"/>
+    
+    <category term="Analesis" scheme="http://example.com/categories/MLDB/Analesis/"/>
+    
+    <category term="Pyecharts" scheme="http://example.com/categories/MLDB/Analesis/Pyecharts/"/>
+    
+    
+    <category term="MLDB" scheme="http://example.com/tags/MLDB/"/>
+    
+    <category term="Analysis" scheme="http://example.com/tags/Analysis/"/>
+    
+    <category term="Pyecharts" scheme="http://example.com/tags/Pyecharts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>刘-Unit-1</title>
+    <link href="http://example.com/posts/a3a089b4"/>
+    <id>http://example.com/posts/a3a089b4</id>
+    <published>2023-08-31T08:57:00.000Z</published>
+    <updated>2023-08-31T09:41:04.369Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Unit-1"><a href="#Unit-1" class="headerlink" title="Unit-1"></a>Unit-1</h1><table>  <tr>    <th>序号</th>    <th>单词</th>    <th>翻译</th>    <th>状态</th>    <th>时间</th>  </tr>  <tr>    <td>1</td>    <td>unit</td>    <td>[n]单元，[v]给他</td>    <td>初学</td>    <td>08/31/2023</td>  </tr>  <tr>    <td>2</td>    <td>apple</td>    <td>[n]苹果，[v]给他</td>    <td>复习</td>    <td>08/31/2023</td>  </tr>  <tr>    <td>3</td>    <td>recognition</td>    <td>[n]组织，[v]组织</td>    <td>巩固</td>    <td>08/31/2023</td>  </tr>  <tr>    <td>4</td>    <td>commit</td>    <td>[n]犯罪，[v]提交</td>    <td>掌握</td>    <td>08/31/2023</td>  </tr></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Unit-1&quot;&gt;&lt;a href=&quot;#Unit-1&quot; class=&quot;headerlink&quot; title=&quot;Unit-1&quot;&gt;&lt;/a&gt;Unit-1&lt;/h1&gt;&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;序号&lt;/th&gt;
+    &lt;th&gt;单词&lt;/th&gt;
+    &lt;th&gt;翻译</summary>
+      
+    
+    
+    
+    <category term="English" scheme="http://example.com/categories/English/"/>
+    
+    <category term="Words" scheme="http://example.com/categories/English/Words/"/>
+    
+    
+    <category term="English" scheme="http://example.com/tags/English/"/>
+    
+    <category term="Words" scheme="http://example.com/tags/Words/"/>
+    
+  </entry>
   
   <entry>
     <title>[Hive] 一、基本搭建配置与启动</title>
@@ -35,11 +99,11 @@
     <category term="Hive" scheme="http://example.com/categories/MLDB/BigData/Hive/"/>
     
     
-    <category term="BigData" scheme="http://example.com/tags/BigData/"/>
-    
     <category term="MLDB" scheme="http://example.com/tags/MLDB/"/>
     
     <category term="Hive" scheme="http://example.com/tags/Hive/"/>
+    
+    <category term="BigData" scheme="http://example.com/tags/BigData/"/>
     
   </entry>
   
@@ -67,11 +131,11 @@
     <category term="Hadoop" scheme="http://example.com/categories/MLDB/BigData/Hadoop/"/>
     
     
-    <category term="Hadoop" scheme="http://example.com/tags/Hadoop/"/>
+    <category term="MLDB" scheme="http://example.com/tags/MLDB/"/>
     
     <category term="BigData" scheme="http://example.com/tags/BigData/"/>
     
-    <category term="MLDB" scheme="http://example.com/tags/MLDB/"/>
+    <category term="Hadoop" scheme="http://example.com/tags/Hadoop/"/>
     
   </entry>
   
@@ -80,7 +144,7 @@
     <link href="http://example.com/posts/0"/>
     <id>http://example.com/posts/0</id>
     <published>2023-08-29T11:10:00.000Z</published>
-    <updated>2023-08-30T10:33:55.036Z</updated>
+    <updated>2023-08-31T09:43:39.060Z</updated>
     
     <content type="html"><![CDATA[<h1 id="第一章《函数，极限，连续》"><a href="#第一章《函数，极限，连续》" class="headerlink" title="第一章《函数，极限，连续》"></a>第一章《函数，极限，连续》</h1><h2 id="1-1《函数》"><a href="#1-1《函数》" class="headerlink" title="1.1《函数》"></a>1.1《函数》</h2><h3 id="1-1-1《函数的定义》"><a href="#1-1-1《函数的定义》" class="headerlink" title="1.1.1《函数的定义》"></a>1.1.1《函数的定义》</h3><h3 id="1-1-2《函数的性质》"><a href="#1-1-2《函数的性质》" class="headerlink" title="1.1.2《函数的性质》"></a>1.1.2《函数的性质》</h3>]]></content>
     
@@ -92,14 +156,14 @@
     
     
     
-    <category term="高等数学" scheme="http://example.com/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
+    <category term="Mathematics" scheme="http://example.com/categories/Mathematics/"/>
     
     
-    <category term="函数" scheme="http://example.com/tags/%E5%87%BD%E6%95%B0/"/>
+    <category term="Func" scheme="http://example.com/tags/Func/"/>
     
-    <category term="连续" scheme="http://example.com/tags/%E8%BF%9E%E7%BB%AD/"/>
+    <category term="Continuity" scheme="http://example.com/tags/Continuity/"/>
     
-    <category term="极限" scheme="http://example.com/tags/%E6%9E%81%E9%99%90/"/>
+    <category term="Limit" scheme="http://example.com/tags/Limit/"/>
     
   </entry>
   
