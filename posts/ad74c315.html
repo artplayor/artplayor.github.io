@@ -18,15 +18,15 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+        <meta name="description" content="movielens电影评分数据分析 需求如下：  读取数据，从用户表读取用户信息、同样方法，导入电影评分表、电影数据表。 合并数据表 对数据初步描述分析 查看每一部电影不同性别的平均评分并计算分歧差值，之后排序 算出每部电影平均得分并对其进行排序 查看评分次数多的电影并进行排序 过滤掉评分条目数不足250条的电影 评分最高的十部电影 查看不同年龄的分布情况并且采用直方图进行可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pandas实战">
 <meta property="og:url" content="http://example.com/posts/ad74c315">
 <meta property="og:site_name">
-<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:description" content="movielens电影评分数据分析 需求如下：  读取数据，从用户表读取用户信息、同样方法，导入电影评分表、电影数据表。 合并数据表 对数据初步描述分析 查看每一部电影不同性别的平均评分并计算分歧差值，之后排序 算出每部电影平均得分并对其进行排序 查看评分次数多的电影并进行排序 过滤掉评分条目数不足250条的电影 评分最高的十部电影 查看不同年龄的分布情况并且采用直方图进行可">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-09-01T08:03:00.000Z">
-<meta property="article:modified_time" content="2023-09-02T12:18:20.869Z">
+<meta property="article:modified_time" content="2023-09-02T16:48:34.710Z">
 <meta property="article:tag" content="MLDB">
 <meta property="article:tag" content="Analysis">
 <meta property="article:tag" content="Pandas">
@@ -77,8 +77,6 @@
 
     <!--- Font Part-->
     
-        <link href="" rel="stylesheet">
-    
     
     
     
@@ -90,7 +88,7 @@
     <script id="hexo-configurations">
     let Global = window.Global || {};
     Global.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
-    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":["盛明辉","艺术嬉戏家","hai"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":6,"number":true,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"Recommendation","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":true,"id":null},"english":null,"enable":true},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"ArtPlayer","subtitle":{"text":["To Love me To Love BIGDATA","Nothing What Can We Doing!!"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":true,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"},"mathjax":true},"version":"2.4.4","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house","i18n":{"cn":"主页","en":"Home"}},"Archives":{"i18n":{"cn":"归档","en":"Archives"},"path":"/archives","icon":"fa-regular fa-archive"},"categories":{"i18n":{"cn":"分类","en":"Categories"},"icon":"fa-solid fa-folder","path":"/categories/"},"tag":{"i18n":{"cn":"标签","en":"TAG"},"path":"/tags","icon":"fa-regular fa-tag"},"MLDB":{"i18n":{"cn":"机器学习与大数据","en":"ML&DB"},"icon":"fa-solid fa-robot","path":"/mldb"},"Algorithm":{"i18n":{"cn":"算法","en":"algorithm"},"icon":"fa-regular fa-microchip-ai","path":"/algo"},"math":{"i18n":{"cn":"数学","en":"Math"},"icon":"fa-solid fa-infinity","path":"/math"},"english":{"i18n":{"cn":"英语","en":"ENGLISH"},"icon":"fa-solid fa-flag-usa","path":"/english"}},"search":{"enable":true,"preload":true},"categories":{"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":null,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD HH:mm:ss","categories":{"enable":true,"limit":6},"tags":{"enable":true,"limit":6}},"footerStart":"2023/8/28 11:45:14"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":["盛明辉","艺术嬉戏家","hai"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":6,"number":true,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"Recommendation","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":true,"id":null},"english":null,"enable":true},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"ArtPlayer","subtitle":{"text":["To Love me To Love BIGDATA","Nothing What Can We Doing!!"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":true,"version":"9.3.0"}},"version":"2.4.4","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house","i18n":{"cn":"主页","en":"Home"}},"Archives":{"i18n":{"cn":"归档","en":"Archives"},"path":"/archives","icon":"fa-regular fa-archive"},"categories":{"i18n":{"cn":"分类","en":"Categories"},"icon":"fa-solid fa-folder","path":"/categories/"},"tag":{"i18n":{"cn":"标签","en":"TAG"},"path":"/tags","icon":"fa-regular fa-tag"},"MLDB":{"i18n":{"cn":"机器学习与大数据","en":"ML&DB"},"icon":"fa-solid fa-robot","path":"/mldb"},"Algorithm":{"i18n":{"cn":"算法","en":"algorithm"},"icon":"fa-regular fa-microchip-ai","path":"/algo"},"math":{"i18n":{"cn":"数学","en":"Math"},"icon":"fa-solid fa-infinity","path":"/math"},"english":{"i18n":{"cn":"英语","en":"ENGLISH"},"icon":"fa-solid fa-flag-usa","path":"/english"}},"search":{"enable":true,"preload":true},"categories":{"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":null,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD HH:mm:ss","categories":{"enable":true,"limit":6},"tags":{"enable":true,"limit":6}},"footerStart":"2023/8/28 11:45:14"};
     Global.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     Global.data_config = {"masonry":false};
   </script>
@@ -114,6 +112,8 @@
     
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
@@ -481,8 +481,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-09-02 20:18:20</span>
-            <span class="mobile">2023-09-02 20:18:20</span>
+            <span class="desktop">2023-09-03 00:48:34</span>
+            <span class="mobile">2023-09-03 00:48:34</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -548,7 +548,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>6 Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>196 Words</span>
         </span>
     
     
@@ -572,19 +572,22 @@
 
 
         <div class="article-content markdown-body">
-            
-<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="d9b03e0f3cd98d0a9076d133b4ef428ed0bcf67de85d703cea81a0984b9c3a0e">fb5aab976258e26959e9e7935778d7a8c7cf64bcf83c9e0dbf9d844d625d865edcc3e70636089bf9c6cb9fc63b32ac03828c43b8d32f124401d0c8b4f03eb7910064edf978cc57f333bdea7c70e957b240e8db6aab0cf2fe4c9d8fd522cceb48ca2c48458fcbf28d793b2e08343fd64ccab0d370b22889fceeb9522a73953ac7dac2c87ea292ca19b88ec3d3e075506335a4ab177e12d34e9fab5e6c28bfc27f1876af3e41970e870cda5fd6e4d3b69cda6ba4af55d0f7cf2686037d0ddd2e4fa3e1cc534d43568d569b0c7b2f715200b4f24812f87da5c7481ac3696d0005b3876beba1206915cf7e972c75d7f850dea1f9d8f4b71fedee587b5c83d3698e37ca5037f422e142e3d437846c1b872c3a9d01993ed975ce43f41a952e11333f6da3afc6296e74ed52ad99e4574ea6d263969be47527b9b0bf48420abeff09444fe9c31d23086fcafba1ee694658787d2704c4c449a98b6c7ae36913cadf81c9216ea6ad4f73ddda4244b79c273c8501333c85daaf1fd86c9ecfa5810029941d895acb34c4cbf248671d0ac254580b42d99748fd86a6d22967e1eadcc60bc7b59f5c9696b6699a323c4b193854727997c53cd8577e89f497306d543acf2136669b8099aba7b0cf1ca4fb6179779d91a19c8218ac8118c9e5496c673d17afebacfd7d9224299dec151ecf9d2773c8f15682d9a266f2ea0b9febed48875708df290039188d0d3862368580a93436601c60a838451b697ab5ac3b50279f456fd3751e8f4428b333f526d15436213a8b2656b41ed0fa1bba8afaa80e6ff9a82bb4cf12f03254f3d1a684d8d5af89a08e42a015af48c9aa015d9b09269347b7696e930f2e43f23251604818f969d8668446d5a321f71b44f7d26af20ca925a09f781a5fdb287eeea41e83e2f8c66485e4e4bfb305603eecd5acaca5b5ade352e81fe0e391ab41f883fee6132d91de0fac41b8d86657ba847521e9d5ac8062a58c77a2c61ebc06e994af883b03787da994956ab064b6cbd4d77c4b441b32af71c1f673a23196b6fc2a2e4be97f237962b6b3abc9f8b87123ab9045b16fadfaf563dfa1ba9cb9074d7e3312e8362880bb5669cdbd5ed1f590fa269d97fba8064e5e651a70bdcb57e4d9722c269dbb714bc6d340507c4d38ebad40fafd10885e9ebc29704a5415ef0c73d46c75d01ee9e9572c808438cddd44a92f91f70a9d8a2845ab8cc2e1ca49143621eb6a6447e6ce65e5504f3c9222e31d2a8ba01c95fd2c6cec4ebd7dce5105367ce166462799800d28cc7472fd7d6ea92b76f968b4b80aa9c6424d01f664da6d09d553105d49e14d8abe73</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-swup-reload-script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+            <h1 id="movielens电影评分数据分析">movielens电影评分数据分析</h1>
+<p>需求如下：</p>
+<ul>
+<li>读取数据，从用户表读取用户信息、同样方法，导入电影评分表、电影数据表。</li>
+<li>合并数据表</li>
+<li>对数据初步描述分析</li>
+<li>查看每一部电影不同性别的平均评分并计算分歧差值，之后排序</li>
+<li>算出每部电影平均得分并对其进行排序</li>
+<li>查看评分次数多的电影并进行排序</li>
+<li>过滤掉评分条目数不足250条的电影</li>
+<li>评分最高的十部电影</li>
+<li>查看不同年龄的分布情况并且采用直方图进行可视化</li>
+<li>在原数据中标记出用户位于的年龄分组</li>
+<li>可视化显示movies_ratings中不同类型电影的频数</li>
+</ul>
+
         </div>
 
         
@@ -656,7 +659,7 @@
     <div class="post-toc">
         <div class="toc-title">On this page</div>
         <div class="page-title">Pandas实战</div>
-        
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#movielens%E7%94%B5%E5%BD%B1%E8%AF%84%E5%88%86%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="nav-number">1.</span> <span class="nav-text">movielens电影评分数据分析</span></a></li></ol>
 
     </div>
 </div>
@@ -935,6 +938,13 @@
 <script src="/js/plugins/typed.js"></script>
 
 
+
+
+    
+<script src="/js/libs/mermaid.min.js"></script>
+
+    
+<script src="/js/plugins/mermaid.js"></script>
 
 
 

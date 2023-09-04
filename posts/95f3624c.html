@@ -18,18 +18,18 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+        <meta name="description" content="Hive 一、基本搭建配置与启动 一、安装Hadoop">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Hive] 一、基本搭建配置与启动">
 <meta property="og:url" content="http://example.com/posts/95f3624c">
 <meta property="og:site_name">
-<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:description" content="Hive 一、基本搭建配置与启动 一、安装Hadoop">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-08-29T16:51:00.000Z">
-<meta property="article:modified_time" content="2023-09-02T12:18:41.816Z">
+<meta property="article:modified_time" content="2023-09-04T06:14:06.191Z">
 <meta property="article:tag" content="MLDB">
-<meta property="article:tag" content="BigData">
 <meta property="article:tag" content="Hive">
+<meta property="article:tag" content="BigData">
 <meta name="twitter:card" content="summary">
     
     
@@ -77,8 +77,6 @@
 
     <!--- Font Part-->
     
-        <link href="" rel="stylesheet">
-    
     
     
     
@@ -90,7 +88,7 @@
     <script id="hexo-configurations">
     let Global = window.Global || {};
     Global.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
-    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":["盛明辉","艺术嬉戏家","hai"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":6,"number":true,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"Recommendation","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":true,"id":null},"english":null,"enable":true},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"ArtPlayer","subtitle":{"text":["To Love me To Love BIGDATA","Nothing What Can We Doing!!"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":true,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"},"mathjax":true},"version":"2.4.4","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house","i18n":{"cn":"主页","en":"Home"}},"Archives":{"i18n":{"cn":"归档","en":"Archives"},"path":"/archives","icon":"fa-regular fa-archive"},"categories":{"i18n":{"cn":"分类","en":"Categories"},"icon":"fa-solid fa-folder","path":"/categories/"},"tag":{"i18n":{"cn":"标签","en":"TAG"},"path":"/tags","icon":"fa-regular fa-tag"},"MLDB":{"i18n":{"cn":"机器学习与大数据","en":"ML&DB"},"icon":"fa-solid fa-robot","path":"/mldb"},"Algorithm":{"i18n":{"cn":"算法","en":"algorithm"},"icon":"fa-regular fa-microchip-ai","path":"/algo"},"math":{"i18n":{"cn":"数学","en":"Math"},"icon":"fa-solid fa-infinity","path":"/math"},"english":{"i18n":{"cn":"英语","en":"ENGLISH"},"icon":"fa-solid fa-flag-usa","path":"/english"}},"search":{"enable":true,"preload":true},"categories":{"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":null,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD HH:mm:ss","categories":{"enable":true,"limit":6},"tags":{"enable":true,"limit":6}},"footerStart":"2023/8/28 11:45:14"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":["盛明辉","艺术嬉戏家","hai"]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":6,"number":true,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"Recommendation","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":true,"id":null},"english":null,"enable":true},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"ArtPlayer","subtitle":{"text":["To Love me To Love BIGDATA","Nothing What Can We Doing!!"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":true,"version":"9.3.0"}},"version":"2.4.4","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house","i18n":{"cn":"主页","en":"Home"}},"Archives":{"i18n":{"cn":"归档","en":"Archives"},"path":"/archives","icon":"fa-regular fa-archive"},"categories":{"i18n":{"cn":"分类","en":"Categories"},"icon":"fa-solid fa-folder","path":"/categories/"},"tag":{"i18n":{"cn":"标签","en":"TAG"},"path":"/tags","icon":"fa-regular fa-tag"},"MLDB":{"i18n":{"cn":"机器学习与大数据","en":"ML&DB"},"icon":"fa-solid fa-robot","path":"/mldb"},"Algorithm":{"i18n":{"cn":"算法","en":"algorithm"},"icon":"fa-regular fa-microchip-ai","path":"/algo"},"math":{"i18n":{"cn":"数学","en":"Math"},"icon":"fa-solid fa-infinity","path":"/math"},"english":{"i18n":{"cn":"英语","en":"ENGLISH"},"icon":"fa-solid fa-flag-usa","path":"/english"}},"search":{"enable":true,"preload":true},"categories":{"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":null,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"YYYY-MM-DD HH:mm:ss","categories":{"enable":true,"limit":6},"tags":{"enable":true,"limit":6}},"footerStart":"2023/8/28 11:45:14"};
     Global.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     Global.data_config = {"masonry":false};
   </script>
@@ -114,6 +112,8 @@
     
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
@@ -481,8 +481,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-09-02 20:18:41</span>
-            <span class="mobile">2023-09-02 20:18:41</span>
+            <span class="desktop">2023-09-04 14:14:06</span>
+            <span class="mobile">2023-09-04 14:14:06</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -534,11 +534,11 @@
                     </li>
                 
                     <li>
-                        | <a href="/tags/BigData/">BigData</a>&nbsp;
+                        | <a href="/tags/Hive/">Hive</a>&nbsp;
                     </li>
                 
                     <li>
-                        | <a href="/tags/Hive/">Hive</a>&nbsp;
+                        | <a href="/tags/BigData/">BigData</a>&nbsp;
                     </li>
                 
             </ul>
@@ -548,7 +548,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>6 Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>15 Words</span>
         </span>
     
     
@@ -572,19 +572,9 @@
 
 
         <div class="article-content markdown-body">
-            
-<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="5f1876c5eb0bdd6305bef5cebca5be61a27eae80089625cd136a5d5ca8dc19d8">fb5aab976258e26959e9e7935778d7a8c7cf64bcf83c9e0dbf9d844d625d865e9096d022cdbbc20a9f52336c5872a9d00eba78030d2d070dd2eb25193994905d3fe80b0fea49c69349d66f2326d14f8e2f69e1685741a56bde5a67259db01a5ed753be78eca221ed51ec2f2e876c19336a66c82f9ef1ade5f9223320241302660185168d69eadbf8b38ae054833015ab88588db06734e1a71a30ac4745dc13fd76aba41bfd4d9ac9e393bebcc9935ea4c71307558b2bfead1145856978c9d31d303bff58ec90e3fbb72cef355053ff980e83ab96b31d4b7eea7bcd0e50c08bdf94b06aedee1389e9ed32b144514a0f08c7ba80afd4ac52c19d82493addd15b348bf7d5da200e0fee79f638f885f77cbac024dea2967e56383efcbf25b02646f401ad2a8c984a024293698a8d9890c4d0f2b45e2d55926255a4f98a0b39a4b206ca3a01446aca62403073e265e161f3ba5d4cd5306e14090594a4613796fb3f97c87f4ab8981b854eb09af8f575178e8d</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-swup-reload-script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+            <h1 id="hive-一基本搭建配置与启动">Hive 一、基本搭建配置与启动</h1>
+<h2 id="一安装hadoop">一、安装Hadoop</h2>
+
         </div>
 
         
@@ -597,11 +587,11 @@
                     </li>
                 
                     <li class="tag-item">
-                        <a href="/tags/BigData/">#BigData</a>&nbsp;
+                        <a href="/tags/Hive/">#Hive</a>&nbsp;
                     </li>
                 
                     <li class="tag-item">
-                        <a href="/tags/Hive/">#Hive</a>&nbsp;
+                        <a href="/tags/BigData/">#BigData</a>&nbsp;
                     </li>
                 
             </ul>
@@ -656,7 +646,7 @@
     <div class="post-toc">
         <div class="toc-title">On this page</div>
         <div class="page-title">[Hive] 一、基本搭建配置与启动</div>
-        
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hive-%E4%B8%80%E5%9F%BA%E6%9C%AC%E6%90%AD%E5%BB%BA%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%90%AF%E5%8A%A8"><span class="nav-number">1.</span> <span class="nav-text">Hive 一、基本搭建配置与启动</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E5%AE%89%E8%A3%85hadoop"><span class="nav-number">1.1.</span> <span class="nav-text">一、安装Hadoop</span></a></li></ol></li></ol>
 
     </div>
 </div>
@@ -935,6 +925,13 @@
 <script src="/js/plugins/typed.js"></script>
 
 
+
+
+    
+<script src="/js/libs/mermaid.min.js"></script>
+
+    
+<script src="/js/plugins/mermaid.js"></script>
 
 
 
